@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera parte - Condicionantes JS</title>
+</head>
+<body>
+    
+    <img src="./assets/img/imagen1.jpg" height="400px" width="400px" alt="">
+    <button id="agregar-borde">agregar borde</button>
+    <button id="quitar-borde">quitar borde</button>
+
+
+    <script>
+    
+        const botonAgregarBorde = document.getElementById("agregar-borde");
+        const botonQuitarBorde = document.getElementById("quitar-borde");
+        const imagen = document.querySelector("img");
+
+        botonAgregarBorde.addEventListener("click", () => {
+            imagen.style.border = "5px solid red";
+        });
+
+        botonQuitarBorde.addEventListener("click", () => {
+            imagen.style.border = "none";
+        });
+    </script>
+</body>
+</html>
